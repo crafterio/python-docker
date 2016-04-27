@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pre Reqs User Scripts
-SCRIPTS=$(find ./.crafter/pre-reqs -type f -name '*.sh')
+SCRIPTS=$(find ./.crafter/pre -type f -name '*.sh')
 
 if [[ ! -z ${SCRIPTS} ]]; then
   for script in ${SCRIPTS}; do
@@ -10,7 +10,7 @@ if [[ ! -z ${SCRIPTS} ]]; then
 fi
 
 # Override Reqs user scripts
-SCRIPTS=$(find ./.crafter/override-reqs -type f -name '*.sh')
+SCRIPTS=$(find ./.crafter/override -type f -name '*.sh')
 
 if [[ ! -z ${SCRIPTS} ]]; then
   for script in ${SCRIPTS}; do
@@ -28,7 +28,7 @@ else
 fi
 
 # Post Reqs User Scripts
-SCRIPTS=$(find ./.crafter/post-reqs -type f -name '*.sh')
+SCRIPTS=$(find ./.crafter/post -type f -name '*.sh')
 
 if [[ ! -z ${SCRIPTS} ]]; then
   for script in ${SCRIPTS}; do
