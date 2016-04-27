@@ -2,6 +2,8 @@ FROM phusion/passenger-customizable
 
 MAINTAINER Marc Lopez <marc5.12@outlook.com>
 
+ENV CODE_DIR /home/app/app
+
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 RUN /pd_build/utilities.sh \
