@@ -3,6 +3,7 @@ FROM phusion/passenger-customizable
 MAINTAINER Marc Lopez <marc5.12@outlook.com>
 
 ENV CODE_DIR /home/app/app
+WORKDIR $CODE_DIR
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
